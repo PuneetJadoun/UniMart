@@ -1,0 +1,29 @@
+.cat-container {
+    margin: 20px;
+  }
+  
+  .cat-container > div {
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+  }
+  
+  .all-cat-h {
+    font-weight: 700;
+    margin-right: 10px;
+    color: #002f34;
+  }
+  
+  .category {
+    margin-right: 12px;
+    font-weight: 600;
+    color: #014248;
+    transition: color 0.3s ease;
+  }
+  
+  .category:hover {
+    color: #002f34;
+    cursor: pointer;
+  }
+  

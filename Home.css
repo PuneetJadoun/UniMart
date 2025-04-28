@@ -1,0 +1,125 @@
+.home-products-container {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+.home-clear-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.home-clear-btn:hover {
+  background-color: #c0392b;
+  color: white;
+}
+.home-d-flex {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.home-product-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 310px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.home-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.home-product-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+.home-product-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-main {
+  left: 0;
+  animation: flipkartSlide 8s infinite;
+  animation-delay: 0s;
+}
+.image-secondary {
+  left: 0;
+  animation: flipkartSlide 8s infinite;
+  animation-delay: 4s; 
+}
+
+@keyframes flipkartSlide {
+  0%, 3% {
+    transform: translateX(100%); 
+    opacity: 0;
+  }
+  8%, 47% {
+    transform: translateX(0); 
+    opacity: 1;
+  }
+  52%, 100% {
+    transform: translateX(-100%); 
+    opacity: 0;
+  }
+}
+.home-product-card:hover .image-main,
+.home-product-card:hover .image-secondary {
+  animation-play-state: paused;
+}
+.home-product-details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 4px;
+}
+.home-product-name-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #0d0d0e;
+}
+.home-product-category {
+  font-style: italic;
+}
+.home-product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d0d0e;
+}
+.home-product-description {
+  font-size: 18px;
+  color: #14bc84;
+}
+.home-like-button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+.home-like-icon {
+  font-size: 24px;
+  color: #d2e5e7;
+  transition: color 0.3s;
+}
+.home-like-icon:hover,
+.home-like-icon.red {
+  color: #e74c3c;
+}

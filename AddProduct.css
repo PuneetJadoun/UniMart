@@ -1,0 +1,88 @@
+.ProductPageContainer {
+  height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddProductContainer {
+  width: 80%;  /* 80% of the page width */
+  max-width: 1000px;  /* Optional: to prevent it from being too wide on large screens */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.AddProductCard {
+  max-height: 95vh;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+  flex-grow: 1; 
+}
+
+.AddProductHeader {
+  background-color: #1b5e20;
+  color: white;
+  padding: 10px;
+}
+
+.AddProductTitle {
+  text-align: center;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.AddProductBody {
+  padding: 1rem;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.GreenBorder {
+  border-color: #388e3c;
+  border-radius: 8px;
+}
+
+.GreenSelect {
+  border-color: #388e3c;
+  border-radius: 8px;
+}
+
+.GreenInputGroup .InputGroupText {
+  background-color: #388e3c;
+  color: white;
+}
+
+.GreenInputRoundedRight {
+  border-color: #388e3c;
+  border-radius: 0 8px 8px 0;
+}
+
+.SmallNote {
+  font-size: 0.7rem;
+  color: #6c757d;
+}
+
+.SubmitButton {
+  background-color: #1b5e20;
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+}
+
+.ReturnLink {
+  background-color: #e8f5e9;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.ReturnLink a {
+  color: #1b5e20;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}

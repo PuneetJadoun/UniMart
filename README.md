@@ -1,0 +1,1 @@
+This is a basic project for MERN Stack , a rental Platform where you can upload Your product for sell, also a user can check the Contact information of the owner , threre is chat section for the Product also , where Buyers and sellers can have a chat about the product.
